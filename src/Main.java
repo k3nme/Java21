@@ -1,3 +1,5 @@
+import java.util.stream.IntStream;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -14,6 +16,8 @@ public class Main {
         System.out.println(shape.toString() + i);
         System.out.println(polygon.toString() + j);
         System.out.println(ret(point));
+
+        IntStream.range(j, i).forEach(System.out::println);
     }
 
 
